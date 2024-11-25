@@ -1,0 +1,36 @@
+.container {
+  width: 100vw;
+  max-width: 1600px;
+  min-height: 100vh;
+  background-color: var(--primary-color);
+}
+
+.content {
+  padding: 2rem;
+  padding-top: 25rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 2rem;
+}
+
+// header dynamic height breakpoints
+
+@media screen and (width <= 679px) {
+  .content {
+    padding-top: 33rem;
+  }
+}
+
+@media screen and (width <= 449px) {
+  .content {
+    padding-top: 42rem;
+  }
+}
+
+@media screen and (width <= 430px) {
+  .content {
+    padding-top: 15rem;
+  }
+}

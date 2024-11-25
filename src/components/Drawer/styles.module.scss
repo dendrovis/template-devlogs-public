@@ -1,0 +1,108 @@
+.container {
+  position: fixed;
+  left: 0;
+  transition: all 0.3s ease-in-out;
+  z-index: 3;
+}
+
+.container-anchor {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 1rem 0;
+  height: 100vh;
+  background-color: var(--primary-color);
+  border: 0.1rem solid var(--secondary-color);
+  border-top-right-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  border-left-width: 0;
+  min-width: 15rem;
+}
+
+.hide {
+  transform: translateX(-14.5rem);
+}
+
+.item-container {
+  margin-bottom: -0.2rem;
+}
+
+.item {
+  font-size: large;
+  border: 0.1rem solid var(--secondary-color);
+  border-top-right-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  border-left-width: 0;
+  padding: 0.5rem 1rem;
+  padding-right: 3rem;
+  background-color: var(--primary-color);
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  z-index: 1;
+  position: relative;
+  box-shadow: 0 4px 4px rgba(0 0 0 / 25%);
+}
+
+.item:hover {
+  background-color: var(--primary-color-light);
+}
+
+.item-selected {
+  scale: 1.2;
+  transform: translateX(0.7rem);
+  margin: 0.3rem 0;
+}
+
+.sub-item-container {
+  border-bottom: 0.1rem solid var(--secondary-color);
+  border-right: 0.1rem solid var(--secondary-color);
+  border-bottom-right-radius: 1rem;
+  margin-right: -0.1rem;
+  max-height: 0;
+  transition: all 0.3s ease-in-out;
+  transform: translateX(-15rem);
+  z-index: 0;
+  position: relative;
+}
+
+.sub-item-container-selected {
+  transform: translateX(0);
+  max-height: unset;
+}
+
+.sub-item {
+  font-size: large;
+  border-left: 0.4rem solid var(--primary-color-light);
+  padding: 0.75rem 1rem;
+  border-top-right-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  display: flex;
+}
+
+.sub-item:hover {
+  background-color: var(--primary-color-light);
+}
+
+.drawer-knot-container {
+  position: absolute;
+  right: -3rem;
+  top: 50%;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+
+  svg > circle {
+    transition: all 0.3s ease-in-out;
+  }
+}
+
+.drawer-knot-open {
+  transform: rotate(180deg);
+
+  svg > circle {
+    stroke: var(--primary-color);
+    fill: var(--secondary-color);
+  }
+}

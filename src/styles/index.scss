@@ -1,0 +1,88 @@
+@use 'reset';
+@use 'global';
+
+@font-face {
+  font-family: fuzzy-bubbles;
+  src: url('../assets/fonts/fuzzy-bubbles.ttf');
+}
+
+:root {
+  --primary-color: #2f2440;
+  --primary-color-gray: #2a2a2a;
+  --primary-color-light: #6d5395;
+  --primary-color-light-gray: #626262;
+  --secondary-color: #c6b79b;
+  --secondary-color-gray: #d3d3d3;
+  --secondary-color-light: #e3d2b2;
+  --secondary-color-light-gray: #b8b8b8;
+  --tertiary-color: #ba0f30;
+  --tertiary-color-light: #ff2511;
+}
+
+/*
+  font style
+*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: fuzzy-bubbles, serif;
+  color: var(--secondary-color-light);
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 1.6rem;
+}
+
+h3 {
+  font-size: 1.3rem;
+}
+
+div,
+p {
+  font-family: fuzzy-bubbles, serif;
+  font-size: 1.2rem;
+  text-align: justify;
+  color: var(--secondary-color-light);
+}
+
+@media screen and (width <= #{global.$mobile-width}) {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p {
+    transform: scale(0.8);
+  }
+}
+
+html {
+  /* adjust default font-size to 10px = 1rem for easier mental calculation */
+  font-size: 62.5%;
+}
+
+body {
+  /* set default back to 16px for those element(s) do not use rem as relative sizing */
+  font-size: 1.6rem;
+  background-color: var(--primary-color-gray, purple);
+}
+
+#root {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (width < 300px) {
+  #root {
+    display: none;
+  }
+}
