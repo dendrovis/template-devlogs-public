@@ -1,6 +1,8 @@
 # template-devlogs
 A basic ui template for devlogs.
 
+![devlogs_cover](./README.assets/cover.webp)
+
 ## Pre-requisite
 1. Package Initialiser - [node.js LTS v22.11.0](https://nodejs.org/en)
 2. Runtime Environment, Package Manager - [bun v1.0.14](https://bun.sh/docs/installation)
