@@ -72,7 +72,7 @@ export const PRODUCT: PRODUCT_TYPE = {
               {
                 type: 'link',
                 value:
-                  'https://www.figma.com/design/b6jo5dbawSCidfJrI3I8Pf/uiux-public?node-id=0-1&t=SdYrkdpobSDjkhXC-1',
+                  'https://www.figma.com/design/A6FuuGi2uwyLy3dGwEqfnt/template-devlogs-uiux-v1?node-id=1-14&t=xiMazoHul5pn7fd4-1',
                 options: {
                   alias: 'detail view',
                 },
@@ -100,7 +100,7 @@ export const PRODUCT: PRODUCT_TYPE = {
               {
                 type: 'link',
                 value:
-                  'https://www.figma.com/board/KmNtXzBDkzlM63usld3Low/concepts-public?node-id=0-1&t=1tRFdNcxp8GIVYMz-1',
+                  'https://www.figma.com/board/upbTRPDUcEH3ZPHlSPL9GM/template-devlogs-concepts-v1?node-id=0-1&t=6tDwbFfwtZz4l8UR-1',
                 options: {
                   alias: 'detail view',
                 },
