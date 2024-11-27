@@ -9,14 +9,26 @@ const Header = ({ children, productName, logoSrc, logoAlt, logoWidth }: HeaderPr
     <header className={Classes.container}>
       <div className={Classes.content}>
         <div className={Classes.header}>
-          <div className={Classes.logo}>
-            <Image src={logoSrc} alt={logoAlt} width={logoWidth} height={logoWidth} />
+          <div className={Classes['logo-container']}>
+            <Image
+              className={Classes.logo}
+              src={logoSrc}
+              alt={logoAlt}
+              width={logoWidth}
+              height={logoWidth}
+            />
           </div>
           <div className={Classes['product-name']}>
             <h1>{productName}</h1>
           </div>
-          <div className={Classes.logo}>
-            <Image src={logoSrc} alt={logoAlt} width={logoWidth} height={logoWidth} />
+          <div className={Classes['logo-container']}>
+            <Image
+              className={Classes.logo}
+              src={logoSrc}
+              alt={logoAlt}
+              width={logoWidth}
+              height={logoWidth}
+            />
           </div>
         </div>
         {children}

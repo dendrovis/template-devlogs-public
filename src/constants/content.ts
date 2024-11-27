@@ -1,9 +1,10 @@
-import { TAB_CONCEPTS, TAB_DESIGNS, TAB_DEVELOPMENT } from '../assets/images';
+import { LOGO, TAB_CONCEPTS, TAB_DESIGNS, TAB_DEVELOPMENT } from '../assets/images';
 import { PRODUCT_TYPE } from './types';
 import { DESIGNS, DEVELOPMENT, CONCEPTS } from '../assets/contents/index';
 
 export const PRODUCT: PRODUCT_TYPE = {
   name: 'product name',
+  logo: LOGO,
   defaultTab: 0,
   tabs: [
     { name: 'development', SVG: TAB_DEVELOPMENT },

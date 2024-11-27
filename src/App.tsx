@@ -2,7 +2,6 @@ import React, { type RefObject, useRef, useState } from 'react';
 import { Header, Section } from './components';
 import Classes from './App.module.scss';
 import { PRODUCT, VERSION_LIST } from './constants';
-import { LOGO } from './assets/images';
 import Drawer from './components/Drawer';
 
 const App = () => {
@@ -32,7 +31,7 @@ const App = () => {
   return (
     <div className={Classes.container}>
       <Drawer items={VERSION_LIST[contentIndex]} onClick={onClickDrawerHandler} prefix={prefix} />
-      <Header productName={PRODUCT.name} logoSrc={LOGO} logoWidth={60}>
+      <Header productName={PRODUCT.name} logoSrc={PRODUCT.logo} logoWidth={60}>
         <Header.Navigation
           items={PRODUCT.tabs}
           onClick={(index) => setContentIndex(index)}

@@ -33,18 +33,17 @@
   width: clamp(10rem, 100%, 70rem);
 }
 
-.logo {
-  border: 0.3rem var(--secondary-color) solid;
-  border-radius: 50%;
+.logo-container {
   margin: 0.3rem;
-  width: 100%;
-  max-width: 7rem;
-  aspect-ratio: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.logo > img {
+.logo {
   width: 100%;
-  max-width: 6rem;
+  border: 0.2rem var(--secondary-color, white) solid;
+  border-radius: 50%;
   aspect-ratio: 1;
 }
 

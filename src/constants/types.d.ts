@@ -1,5 +1,6 @@
 export type PRODUCT_TYPE = {
   name: string;
+  logo: string;
   defaultTab: number;
   tabs: { name: string; SVG: FunctionComponent<SVGProps<SVGSVGElement>>; alt?: string }[];
   content: {
